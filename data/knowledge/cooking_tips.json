@@ -1,0 +1,27 @@
+{
+  "by_tag": {
+    "fried": ["Air-fry, bake or shallow-fry with 1 tsp oil instead of deep-frying.", "Blot fried food on paper towels and avoid re-using frying oil."],
+    "butter": ["Swap butter/ghee for 1 tsp cold-pressed oil (groundnut, sesame or olive) per serving."],
+    "cream": ["Replace cream with thick curd or blended cashew/onion paste; add it off the heat to avoid curdling."],
+    "refined_carb": ["Use whole-wheat, millet (ragi, jowar, bajra) or brown-rice versions.", "Add vegetables, dal or sprouts to the same dish to lower its glycaemic load."],
+    "high_sugar": ["Reduce sugar by half, or sweeten with fruit or dates in small amounts."],
+    "high_fat": ["Trim visible fat, use less oil and thicken gravies with tomato, onion or dal instead of cream."],
+    "processed": ["Cook from scratch and season with herbs, lemon, ginger, garlic and spices instead of salt or sauces."],
+    "red_meat": ["Choose skinless chicken or fish, and grill or steam instead of frying."]
+  },
+  "by_food": {
+    "plain_rice": ["Wash rice well, cook with extra water and drain; cooling then reheating raises resistant starch.", "Keep the rice portion to about a quarter of the plate and fill the rest with vegetables and dal."],
+    "sambar": ["Load it with vegetables and use less tamarind and salt."],
+    "idli": ["Pair with sambar or a protein side (sprouts, egg) and use a little less rice in the batter, more urad dal."],
+    "masala_dosa": ["Use a non-stick pan with a drop of oil, and a thinner dosa with a vegetable-rich filling."],
+    "biryani": ["Use brown or parboiled rice, more vegetables and lean chicken; serve with raita and salad."]
+  },
+  "by_condition": {
+    "diabetes": ["Add a salad or dal first, then carbohydrates, to slow glucose rise."],
+    "hypertension": ["Cut added salt by a third; use lemon, coriander and spices for flavour."],
+    "obesity": ["Use smaller plates and cook with measured oil (1 tsp per person)."],
+    "heart_disease": ["Prefer steaming, grilling, pressure-cooking and roasting."],
+    "kidney_disease": ["Leaching (soaking and boiling) vegetables in plenty of water lowers their potassium - ask your renal dietitian."],
+    "pcos": ["Combine carbohydrates with protein (dal, paneer, egg, sprouts) in every meal."]
+  }
+}

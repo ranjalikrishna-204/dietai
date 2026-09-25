@@ -1,0 +1,7 @@
+# extra packages only needed for dataset preparation / training / evaluation
+-r requirements.txt
+datasets>=2.20        # Hugging Face datasets (Food-101, Indian food)
+scikit-learn
+matplotlib
+tqdm
+pyyaml

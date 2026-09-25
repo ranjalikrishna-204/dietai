@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+dietai.db
+data/raw/
+data/interim/
+data/processed/
+runs/
+models/*.pt
+models/*.onnx

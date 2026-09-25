@@ -1,0 +1,66 @@
+{
+  "_note": "Starter thresholds inspired by general guidance (ADA, AHA, WHO, KDOQI, ICMR-NIN). They are EDITABLE and must be reviewed by a qualified dietitian before any real-world use. item_limits apply to one portion; meal_limits apply to the whole meal.",
+  "general": {
+    "label": "General healthy eating",
+    "item_limits": {"sat_fat_g": 8, "sugar_g": 20, "sodium_mg": 700},
+    "meal_limits": {"kcal": 800, "sat_fat_g": 12, "sodium_mg": 1000},
+    "avoid_gi": [],
+    "avoid_tags": ["fried"],
+    "prefer_tags": ["fibre_rich", "whole_grain", "protein_rich", "fruit"],
+    "advice": ["Fill half your plate with vegetables, a quarter with protein and a quarter with whole grains."]
+  },
+  "diabetes": {
+    "label": "Diabetes",
+    "item_limits": {"carb_g": 45, "sugar_g": 15},
+    "meal_limits": {"carb_g": 60, "sugar_g": 20},
+    "avoid_gi": ["high"],
+    "avoid_tags": ["high_sugar"],
+    "prefer_tags": ["fibre_rich", "legume", "whole_grain", "protein_rich", "millet"],
+    "advice": ["Spread carbohydrates evenly across meals.", "Pair carbohydrates with protein or fibre to slow glucose rise."]
+  },
+  "hypertension": {
+    "label": "Hypertension",
+    "item_limits": {"sodium_mg": 500},
+    "meal_limits": {"sodium_mg": 800},
+    "avoid_gi": [],
+    "avoid_tags": ["processed", "street_food"],
+    "prefer_tags": ["fruit", "fibre_rich", "probiotic"],
+    "advice": ["Aim for under 2,000 mg sodium per day (WHO).", "Prefer fresh food over packaged or pickled items."]
+  },
+  "obesity": {
+    "label": "Obesity / weight management",
+    "item_limits": {"kcal": 400, "fat_g": 20},
+    "meal_limits": {"kcal": 650, "fat_g": 25},
+    "avoid_gi": [],
+    "avoid_tags": ["fried", "high_sugar"],
+    "prefer_tags": ["fibre_rich", "lean_protein", "low_calorie", "fruit"],
+    "advice": ["Prefer high-fibre, high-protein foods that keep you full on fewer calories."]
+  },
+  "heart_disease": {
+    "label": "Heart disease",
+    "item_limits": {"sat_fat_g": 5, "sodium_mg": 500},
+    "meal_limits": {"sat_fat_g": 7, "sodium_mg": 800},
+    "avoid_gi": [],
+    "avoid_tags": ["fried", "red_meat", "cream", "butter"],
+    "prefer_tags": ["fibre_rich", "omega3", "whole_grain", "legume", "fruit"],
+    "advice": ["Replace saturated fat (butter, cream, ghee) with unsaturated fat where possible."]
+  },
+  "kidney_disease": {
+    "label": "Kidney disease",
+    "item_limits": {"potassium_mg": 400, "sodium_mg": 400, "protein_g": 20},
+    "meal_limits": {"potassium_mg": 700, "sodium_mg": 700, "protein_g": 30},
+    "avoid_gi": [],
+    "avoid_tags": ["processed"],
+    "prefer_tags": ["low_calorie"],
+    "advice": ["Kidney diets depend strongly on disease stage - follow your nephrologist or renal dietitian's limits."]
+  },
+  "pcos": {
+    "label": "PCOS",
+    "item_limits": {"sugar_g": 12},
+    "meal_limits": {"carb_g": 60, "sugar_g": 15},
+    "avoid_gi": ["high"],
+    "avoid_tags": ["high_sugar", "refined_carb", "fried"],
+    "prefer_tags": ["fibre_rich", "protein_rich", "whole_grain", "legume", "millet", "omega3"],
+    "advice": ["Favour low-GI, high-fibre meals with adequate protein to support insulin sensitivity."]
+  }
+}

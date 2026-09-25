@@ -1,0 +1,18 @@
+# ---- runtime (backend + frontend) ----
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+python-dotenv>=1.0
+pydantic>=2.7
+numpy
+pandas
+pillow
+opencv-python-headless
+onnxruntime>=1.18
+ultralytics>=8.4          # YOLO26 support -> check `pip show ultralytics` after install
+streamlit>=1.40
+plotly>=5.22
+requests
+# ---- tests ----
+pytest
+httpx

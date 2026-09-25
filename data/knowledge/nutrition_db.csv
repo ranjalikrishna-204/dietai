@@ -1,0 +1,44 @@
+food,display_name,category,roles,veg,serving_g,gi,tags,allergens,kcal,protein_g,carb_g,fat_g,sat_fat_g,fiber_g,sugar_g,sodium_mg,potassium_mg,calcium_mg,iron_mg,vitamin_c_mg
+idli,Idli,south_indian,breakfast,1,90,medium,fermented;steamed,,145,4.5,30,0.4,0.1,1.0,0.5,220,90,15,0.8,0
+masala_dosa,Masala Dosa,south_indian,breakfast,1,180,medium,fermented;oily,,170,4.0,26,6.5,1.8,1.8,1.0,350,260,25,1.1,4
+sambar,Sambar,south_indian,curry;side,1,150,low,legume;fibre_rich;gravy,,55,2.8,8,1.5,0.3,2.0,2.0,350,250,30,1.0,5
+plain_rice,Steamed Rice,staple,staple,1,180,high,refined_carb,,130,2.7,28,0.3,0.1,0.4,0.1,5,35,10,0.2,0
+brown_rice,Brown Rice,staple,staple,1,180,medium,whole_grain;fibre_rich,,123,2.7,25.6,1.0,0.2,1.6,0.4,5,80,10,0.5,0
+chapati,Chapati,staple,staple,1,80,medium,whole_grain,gluten,290,9.0,50,5.0,1.0,4.5,1.0,300,200,25,2.5,0
+ragi_roti,Ragi Roti,staple,staple;breakfast,1,80,medium,whole_grain;millet;fibre_rich,,260,7.0,50,3.5,0.7,8.0,1.0,200,300,250,3.5,0
+butter_naan,Butter Naan,staple,staple,1,90,high,refined_carb;butter,gluten;dairy,310,9.0,50,8.0,4.0,2.0,3.0,450,120,60,2.0,0
+biryani,Chicken Biryani,rice_dish,staple;curry,0,250,high,refined_carb;oily,,170,8.0,22,5.5,1.8,0.9,1.0,400,160,20,1.0,1
+fried_rice,Fried Rice,rice_dish,staple,0,200,high,refined_carb;oily,egg,165,4.5,27,4.5,0.9,1.0,1.0,500,100,15,0.9,0
+dal_tadka,Dal Tadka,curry,curry;side,1,150,low,legume;protein_rich;fibre_rich,,100,6.0,14,2.5,0.5,3.5,1.0,300,300,25,1.8,0
+dal_makhani,Dal Makhani,curry,curry,1,150,low,legume;butter;cream;high_fat,dairy,140,6.0,14,7.0,3.5,4.0,1.5,350,280,40,1.8,0
+kadai_paneer,Kadai Paneer,curry,curry,1,150,low,cream;high_fat,dairy,210,10.0,6,16.0,8.0,1.5,3.0,450,250,200,1.0,10
+butter_chicken,Butter Chicken,curry,curry,0,200,low,cream;butter;high_fat,dairy,200,13.0,6,14.0,6.0,1.0,3.5,480,290,40,1.0,2
+chicken_curry,Chicken Curry,curry,curry,0,200,low,protein_rich,,150,14.0,4,8.5,2.0,1.0,1.5,400,250,25,1.2,2
+chole_bhature,Chole Bhature,north_indian,breakfast;staple,1,250,high,fried;refined_carb,gluten,280,8.0,35,12.0,2.8,4.0,2.0,480,250,40,2.5,1
+pav_bhaji,Pav Bhaji,street_food,snack;staple,1,250,high,butter;refined_carb,gluten;dairy,150,3.8,22,5.5,2.5,3.0,3.0,520,270,35,1.3,8
+samosa,Samosa,snack,snack,1,100,high,fried;refined_carb,gluten,290,5.0,30,16.0,3.5,2.5,1.5,400,250,20,1.5,1
+pakode,Pakoda,snack,snack,1,80,medium,fried,,300,8.0,28,18.0,2.5,4.0,2.0,500,300,40,2.5,1
+paani_puri,Pani Puri,street_food,snack,1,100,high,fried;refined_carb;street_food,gluten,220,4.0,32,8.0,1.5,2.0,3.0,450,150,20,1.2,2
+dhokla,Dhokla,snack,breakfast;snack,1,100,medium,steamed;fermented,,160,6.5,25,4.0,0.7,2.0,4.0,500,200,30,1.5,0
+momos,Momos,snack,snack,0,120,medium,steamed;refined_carb,gluten,170,8.0,22,5.5,1.5,1.2,1.0,450,150,25,1.2,1
+kaathi_rolls,Kathi Roll,street_food,snack,0,200,high,refined_carb;processed,gluten,220,10.0,25,9.0,3.0,1.5,2.0,500,180,40,1.5,2
+jalebi,Jalebi,dessert,dessert,1,60,high,fried;sweet;high_sugar;refined_carb,gluten,400,2.5,68,13.0,2.5,0.5,45.0,20,50,15,0.8,0
+gulab_jamun,Gulab Jamun,dessert,dessert,1,80,high,fried;sweet;high_sugar;refined_carb,gluten;dairy,320,4.0,50,12.0,5.0,0.5,40.0,60,80,60,0.5,0
+kulfi,Kulfi,dessert,dessert,1,80,low,dairy;sweet;high_sugar,dairy;nuts,200,5.0,22,10.0,6.0,0.0,20.0,60,200,150,0.2,0
+ice_cream,Ice Cream,dessert,dessert,1,100,low,dairy;sweet;high_sugar,dairy,207,3.5,24,11.0,6.8,0.7,21.0,80,199,128,0.1,1
+chai,Milk Tea (sweet),beverage,beverage,1,150,medium,sweet;high_sugar,dairy,50,1.5,8,1.8,1.1,0.0,7.5,25,90,55,0.1,0
+pizza,Pizza,fast_food,snack;staple,1,120,medium,refined_carb;processed;cheese,gluten;dairy,270,11.0,33,10.0,4.5,2.0,3.5,600,180,200,2.5,1
+burger,Burger,fast_food,snack;staple,0,200,medium,processed;refined_carb;red_meat,gluten,260,13.0,24,12.0,4.5,1.5,5.0,500,200,80,2.2,1
+french_fries,French Fries,fast_food,snack;side,1,120,high,fried;refined_carb,,312,3.4,41,15.0,2.3,3.8,0.3,210,580,15,0.8,4
+omelette,Omelette,egg,breakfast;curry,0,100,low,egg;protein_rich;cholesterol_rich,egg,154,10.6,0.6,12.0,3.5,0.0,0.5,200,150,50,1.5,0
+egg_boiled,Boiled Egg,egg,breakfast;snack;curry,0,100,low,egg;protein_rich;cholesterol_rich,egg,155,13.0,1.1,11.0,3.3,0.0,1.1,124,126,50,1.2,0
+upma,Upma,south_indian,breakfast,1,200,medium,refined_carb,gluten,120,3.0,20,3.5,0.7,1.5,1.0,350,100,15,0.9,1
+poha,Poha,breakfast,breakfast,1,150,medium,light,,130,2.5,25,2.5,0.5,1.5,1.0,300,100,15,1.5,1
+moong_dal_chilla,Moong Dal Chilla,breakfast,breakfast;snack,1,100,low,legume;protein_rich;fibre_rich,,140,9.0,18,3.5,0.6,3.0,1.0,250,300,30,1.5,0
+oats_porridge,Oats Porridge,breakfast,breakfast,1,200,low,whole_grain;fibre_rich,gluten,70,2.5,12,1.5,0.3,1.7,0.5,60,90,20,0.6,0
+grilled_chicken,Grilled Chicken,protein,curry,0,150,low,lean_protein;protein_rich,,165,31.0,0,3.6,1.0,0.0,0.0,250,250,15,1.0,0
+grilled_fish,Grilled Fish,protein,curry,0,150,low,lean_protein;protein_rich;omega3,fish,140,24.0,0,4.5,1.0,0.0,0.0,250,350,20,0.6,0
+sprouts_salad,Sprouts Salad,salad,side;snack,1,100,low,legume;fibre_rich;protein_rich,,90,7.0,14,0.6,0.1,4.0,2.0,30,300,30,1.5,10
+vegetable_salad,Vegetable Salad,salad,side;snack,1,150,low,fibre_rich;low_calorie,,30,1.5,6,0.3,0.0,2.0,3.0,20,200,30,0.6,15
+fruit_bowl,Fresh Fruit Bowl,fruit,dessert;snack,1,150,low,fruit;fibre_rich,,60,0.8,15,0.3,0.0,2.0,10.0,2,200,15,0.3,25
+curd,Plain Curd,dairy,side;dessert,1,100,low,probiotic;dairy,dairy,61,3.5,4.7,3.3,2.1,0.0,4.7,46,155,121,0.1,1
