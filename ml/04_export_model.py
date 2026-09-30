@@ -37,6 +37,7 @@ def main():
         input_names=["input"], output_names=["logits"],
         dynamic_axes={"input": {0: "batch"}, "logits": {0: "batch"}},
         opset_version=17,
+        dynamo=False, 
     )
     # Save the class list + preprocessing config next to the model so the backend
     # never has to guess it.
