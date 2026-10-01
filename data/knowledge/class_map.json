@@ -1,35 +1,335 @@
+
 {
   "_note": "canonical class -> label aliases found in ANY source dataset (labels are lower-cased, spaces/hyphens -> underscores). Run `python ml/01_prepare_dataset.py --list-labels` to see what your sources contain, then extend the aliases.",
-  "idli": ["idli", "idly"],
-  "masala_dosa": ["masala_dosa", "dosa", "plain_dosa"],
-  "sambar": ["sambar", "sambhar"],
-  "plain_rice": ["plain_rice", "steamed_rice", "white_rice", "rice"],
-  "chapati": ["chapati", "chappati", "roti", "phulka"],
-  "butter_naan": ["butter_naan", "naan"],
-  "biryani": ["biryani", "chicken_biryani", "veg_biryani"],
-  "fried_rice": ["fried_rice"],
-  "dal_tadka": ["dal_tadka", "daal_tadka", "dal_fry"],
-  "dal_makhani": ["dal_makhani", "daal_makhani"],
-  "kadai_paneer": ["kadai_paneer", "kadhai_paneer"],
-  "butter_chicken": ["butter_chicken"],
-  "chicken_curry": ["chicken_curry"],
-  "chole_bhature": ["chole_bhature", "chana_masala", "chole"],
-  "pav_bhaji": ["pav_bhaji"],
-  "samosa": ["samosa"],
-  "pakode": ["pakode", "pakoda", "pakora"],
-  "paani_puri": ["paani_puri", "pani_puri", "golgappa"],
-  "dhokla": ["dhokla"],
-  "momos": ["momos", "momo"],
-  "kaathi_rolls": ["kaathi_rolls", "kathi_roll"],
-  "jalebi": ["jalebi"],
-  "gulab_jamun": ["gulab_jamun"],
-  "kulfi": ["kulfi"],
-  "ice_cream": ["ice_cream"],
-  "chai": ["chai", "masala_chai"],
-  "pizza": ["pizza"],
-  "burger": ["burger", "hamburger"],
-  "french_fries": ["french_fries"],
-  "omelette": ["omelette", "omelet"],
-  "upma": ["upma"],
-  "poha": ["poha"]
+  "idli": [
+    "idli",
+    "idly"
+  ],
+  "masala_dosa": [
+    "masala_dosa",
+    "dosa",
+    "plain_dosa"
+  ],
+  "sambar": [
+    "sambar",
+    "sambhar"
+  ],
+  "plain_rice": [
+    "plain_rice",
+    "steamed_rice",
+    "white_rice",
+    "rice"
+  ],
+  "chapati": [
+    "chapati",
+    "chappati",
+    "roti",
+    "phulka"
+  ],
+  "butter_naan": [
+    "butter_naan",
+    "naan"
+  ],
+  "biryani": [
+    "biryani",
+    "chicken_biryani",
+    "veg_biryani"
+  ],
+  "fried_rice": [
+    "fried_rice"
+  ],
+  "dal_tadka": [
+    "dal_tadka",
+    "daal_tadka",
+    "dal_fry"
+  ],
+  "dal_makhani": [
+    "dal_makhani",
+    "daal_makhani"
+  ],
+  "kadai_paneer": [
+    "kadai_paneer",
+    "kadhai_paneer"
+  ],
+  "butter_chicken": [
+    "butter_chicken"
+  ],
+  "chicken_curry": [
+    "chicken_curry"
+  ],
+  "chole_bhature": [
+    "chole_bhature",
+    "chana_masala",
+    "chole"
+  ],
+  "pav_bhaji": [
+    "pav_bhaji"
+  ],
+  "samosa": [
+    "samosa"
+  ],
+  "pakode": [
+    "pakode",
+    "pakoda",
+    "pakora"
+  ],
+  "paani_puri": [
+    "paani_puri",
+    "pani_puri",
+    "golgappa"
+  ],
+  "dhokla": [
+    "dhokla"
+  ],
+  "momos": [
+    "momos",
+    "momo"
+  ],
+  "kaathi_rolls": [
+    "kaathi_rolls",
+    "kathi_roll"
+  ],
+  "jalebi": [
+    "jalebi"
+  ],
+  "gulab_jamun": [
+    "gulab_jamun"
+  ],
+  "kulfi": [
+    "kulfi"
+  ],
+  "ice_cream": [
+    "ice_cream"
+  ],
+  "chai": [
+    "chai",
+    "masala_chai"
+  ],
+  "pizza": [
+    "pizza"
+  ],
+  "burger": [
+    "burger",
+    "hamburger"
+  ],
+  "french_fries": [
+    "french_fries"
+  ],
+  "omelette": [
+    "omelette",
+    "omelet"
+  ],
+  "upma": [
+    "upma"
+  ],
+  "poha": [
+    "poha"
+  ],
+  "kadhi_pakoda": [
+    "kadhi_pakoda"
+  ],
+  "ariselu": [
+    "ariselu"
+  ],
+  "sheer_korma": [
+    "sheer_korma"
+  ],
+  "makki_di_roti_sarson_da_saag": [
+    "makki_di_roti_sarson_da_saag"
+  ],
+  "sheera": [
+    "sheera"
+  ],
+  "chhena_kheeri": [
+    "chhena_kheeri"
+  ],
+  "rasgulla": [
+    "rasgulla"
+  ],
+  "daal_baati_churma": [
+    "daal_baati_churma"
+  ],
+  "aloo_shimla_mirch": [
+    "aloo_shimla_mirch"
+  ],
+  "anarsa": [
+    "anarsa"
+  ],
+  "shrikhand": [
+    "shrikhand"
+  ],
+  "phirni": [
+    "phirni"
+  ],
+  "misti_doi": [
+    "misti_doi"
+  ],
+  "navrattan_korma": [
+    "navrattan_korma"
+  ],
+  "ras_malai": [
+    "ras_malai"
+  ],
+  "chicken_razala": [
+    "chicken_razala"
+  ],
+  "modak": [
+    "modak"
+  ],
+  "aloo_matar": [
+    "aloo_matar"
+  ],
+  "unni_appam": [
+    "unni_appam"
+  ],
+  "aloo_gobi": [
+    "aloo_gobi"
+  ],
+  "kakinada_khaja": [
+    "kakinada_khaja"
+  ],
+  "imarti": [
+    "imarti"
+  ],
+  "sohan_halwa": [
+    "sohan_halwa"
+  ],
+  "dum_aloo": [
+    "dum_aloo"
+  ],
+  "aloo_tikki": [
+    "aloo_tikki"
+  ],
+  "lyangcha": [
+    "lyangcha"
+  ],
+  "pootharekulu": [
+    "pootharekulu"
+  ],
+  "pithe": [
+    "pithe"
+  ],
+  "chicken_tikka_masala": [
+    "chicken_tikka_masala"
+  ],
+  "bhindi_masala": [
+    "bhindi_masala"
+  ],
+  "karela_bharta": [
+    "karela_bharta"
+  ],
+  "boondi": [
+    "boondi"
+  ],
+  "bandar_laddu": [
+    "bandar_laddu"
+  ],
+  "misi_roti": [
+    "misi_roti"
+  ],
+  "poornalu": [
+    "poornalu"
+  ],
+  "kachori": [
+    "kachori"
+  ],
+  "kajjikaya": [
+    "kajjikaya"
+  ],
+  "chikki": [
+    "chikki"
+  ],
+  "shankarpali": [
+    "shankarpali"
+  ],
+  "ghevar": [
+    "ghevar"
+  ],
+  "kuzhi_paniyaram": [
+    "kuzhi_paniyaram"
+  ],
+  "double_ka_meetha": [
+    "double_ka_meetha"
+  ],
+  "bhatura": [
+    "bhatura"
+  ],
+  "litti_chokha": [
+    "litti_chokha"
+  ],
+  "daal_puri": [
+    "daal_puri"
+  ],
+  "sutar_feni": [
+    "sutar_feni"
+  ],
+  "ledikeni": [
+    "ledikeni"
+  ],
+  "malapua": [
+    "malapua"
+  ],
+  "basundi": [
+    "basundi"
+  ],
+  "sandesh": [
+    "sandesh"
+  ],
+  "dharwad_pedha": [
+    "dharwad_pedha"
+  ],
+  "kofta": [
+    "kofta"
+  ],
+  "paneer_butter_masala": [
+    "paneer_butter_masala"
+  ],
+  "kalakand": [
+    "kalakand"
+  ],
+  "sohan_papdi": [
+    "sohan_papdi"
+  ],
+  "qubani_ka_meetha": [
+    "qubani_ka_meetha"
+  ],
+  "palak_paneer": [
+    "palak_paneer"
+  ],
+  "maach_jhol": [
+    "maach_jhol"
+  ],
+  "gavvalu": [
+    "gavvalu"
+  ],
+  "adhirasam": [
+    "adhirasam"
+  ],
+  "lassi": [
+    "lassi"
+  ],
+  "gajar_ka_halwa": [
+    "gajar_ka_halwa"
+  ],
+  "chicken_tikka": [
+    "chicken_tikka"
+  ],
+  "cham_cham": [
+    "cham_cham"
+  ],
+  "aloo_methi": [
+    "aloo_methi"
+  ],
+  "chak_hao_kheer": [
+    "chak_hao_kheer"
+  ],
+  "doodhpak": [
+    "doodhpak"
+  ],
+  "rabri": [
+    "rabri"
+  ],
+  "mysore_pak": [
+    "mysore_pak"
+  ]
 }

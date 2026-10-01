@@ -42,3 +42,72 @@ sprouts_salad,Sprouts Salad,salad,side;snack,1,100,low,legume;fibre_rich;protein
 vegetable_salad,Vegetable Salad,salad,side;snack,1,150,low,fibre_rich;low_calorie,,30,1.5,6,0.3,0.0,2.0,3.0,20,200,30,0.6,15
 fruit_bowl,Fresh Fruit Bowl,fruit,dessert;snack,1,150,low,fruit;fibre_rich,,60,0.8,15,0.3,0.0,2.0,10.0,2,200,15,0.3,25
 curd,Plain Curd,dairy,side;dessert,1,100,low,probiotic;dairy,dairy,61,3.5,4.7,3.3,2.1,0.0,4.7,46,155,121,0.1,1
+kadhi_pakoda,Kadhi Pakoda,curry,curry,1,200,medium,fried;dairy;gravy,dairy,160,6,14,9,3,1.5,4,450,200,100,1,2
+ariselu,Ariselu,dessert,dessert,1,60,high,fried;sweet;high_sugar,,280,3,45,10,2,1,25,20,60,20,0.5,0
+sheer_korma,Sheer Khurma,dessert,dessert,1,150,medium,dairy;sweet;high_sugar;nuts,dairy;nuts;gluten,220,5,30,9,5,1,20,60,180,120,0.5,0
+makki_di_roti_sarson_da_saag,Sarson Da Saag,curry,curry,1,200,low,fibre_rich;butter,,180,6,14,11,4,5,3,350,400,150,2.5,20
+sheera,Sheera,dessert,dessert,1,100,high,sweet;high_sugar;refined_carb;ghee,gluten,260,4,35,12,6,1,18,10,70,15,0.8,0
+chhena_kheeri,Chhena Kheeri,dessert,dessert,1,100,medium,dairy;sweet;high_sugar,dairy,220,6,28,9,5,0,22,40,100,120,0.2,0
+rasgulla,Rasgulla,dessert,dessert,1,80,medium,dairy;sweet;high_sugar,dairy,186,4,34,2,1,0,30,30,90,80,0.1,0
+daal_baati_churma,Daal Baati Churma,rice_dish,staple;curry,1,300,high,fried;ghee;refined_carb;legume,gluten,450,12,55,20,8,5,10,400,350,60,3,0
+aloo_shimla_mirch,Aloo Shimla Mirch,curry,curry,1,150,medium,fibre_rich,,140,3,18,6,1,3,3,300,350,15,0.8,30
+anarsa,Anarsa,dessert,dessert,1,50,high,fried;sweet;high_sugar,,220,2,35,8,1.5,1,18,10,40,10,0.3,0
+shrikhand,Shrikhand,dessert,dessert,1,100,medium,dairy;sweet;high_sugar;probiotic,dairy,180,5,28,5,3,0,25,40,150,120,0.1,0
+phirni,Phirni,dessert,dessert,1,120,medium,dairy;sweet;high_sugar,dairy,180,4,28,6,3.5,0.5,20,50,140,100,0.2,0
+misti_doi,Misti Doi,dessert,dessert,1,100,medium,dairy;sweet;high_sugar;probiotic,dairy,180,5,28,5,3,0,26,50,150,120,0.1,0
+navrattan_korma,Navrattan Korma,curry,curry,1,200,low,cream;high_fat;nuts,dairy;nuts,220,5,16,15,6,3,6,400,350,100,1.2,15
+ras_malai,Ras Malai,dessert,dessert,1,100,medium,dairy;sweet;high_sugar;nuts,dairy;nuts,190,6,22,8,4,0,18,50,150,130,0.2,0
+chicken_razala,Chicken Razala,curry,curry,0,200,low,cream;high_fat,dairy;nuts,230,18,6,15,6,0.5,2,450,300,60,1.2,2
+modak,Modak,dessert,dessert,1,60,medium,steamed;sweet,,150,2,28,4,2,1.5,15,5,80,15,0.4,0
+aloo_matar,Aloo Matar,curry,curry,1,180,medium,fibre_rich,,150,4,20,6,1,4,4,350,400,20,1.2,15
+unni_appam,Unni Appam,snack,breakfast;snack,1,80,high,fried;sweet,,220,3,30,10,3,1,14,10,100,20,0.5,0
+aloo_gobi,Aloo Gobi,curry,curry,1,180,medium,fibre_rich,,140,4,18,6,1,4,3,300,400,25,1,25
+kakinada_khaja,Kakinada Khaja,dessert,dessert,1,60,high,fried;sweet;high_sugar;refined_carb,gluten,300,3,40,15,4,1,20,20,60,15,0.4,0
+imarti,Imarti,dessert,dessert,1,60,high,fried;sweet;high_sugar;refined_carb,,280,3,45,10,2,0.5,30,15,50,15,0.4,0
+sohan_halwa,Sohan Halwa,dessert,dessert,1,60,high,fried;sweet;high_sugar;ghee,gluten;nuts,300,3,35,17,7,1,20,15,70,20,0.6,0
+dum_aloo,Dum Aloo,curry,curry,1,180,medium,cream;high_fat,dairy,220,4,20,14,6,3,4,400,400,25,1.2,20
+aloo_tikki,Aloo Tikki,snack,snack,1,80,high,fried;refined_carb,,180,3,24,8,2,2,2,300,350,20,1,15
+lyangcha,Lyangcha,dessert,dessert,1,60,high,fried;sweet;high_sugar,dairy,220,4,32,9,5,0,25,30,90,80,0.2,0
+pootharekulu,Pootharekulu,dessert,dessert,1,40,high,sweet;high_sugar;ghee,,180,1,30,7,4,0.5,22,5,30,5,0.2,0
+pithe,Pithe,dessert,breakfast;dessert,1,80,medium,steamed;sweet,,150,3,28,3,1.5,1,12,10,60,20,0.4,0
+chicken_tikka_masala,Chicken Tikka Masala,curry,curry,0,200,low,cream;high_fat,dairy,220,18,8,14,5,1,4,500,300,60,1.2,5
+bhindi_masala,Bhindi Masala,curry,curry,1,150,medium,fibre_rich,,120,3,12,7,1,4,3,300,300,80,1,20
+karela_bharta,Karela Bharta,curry,curry,1,150,low,fibre_rich,,100,3,10,6,1,4,2,300,300,30,0.8,30
+boondi,Boondi,snack,snack,1,50,high,fried;refined_carb,,230,6,24,13,2,1,5,350,150,40,1.5,0
+bandar_laddu,Bandar Laddu,dessert,dessert,1,40,high,sweet;high_sugar;ghee,,180,3,22,9,4,1,16,10,60,15,0.5,0
+misi_roti,Misi Roti,staple,staple,1,80,medium,whole_grain,gluten,230,8,38,6,1,5,1,250,300,40,2.5,2
+poornalu,Poornalu,dessert,dessert,1,60,high,fried;sweet;high_sugar,,220,3,32,9,2,1,16,10,70,15,0.4,0
+kachori,Kachori,snack,snack,1,80,high,fried;refined_carb,gluten,280,6,30,15,3,2,2,350,180,30,1.8,0
+kajjikaya,Kajjikaya,dessert,dessert,1,50,high,fried;sweet;high_sugar,gluten;nuts,230,3,28,12,4,1,16,10,70,20,0.5,0
+chikki,Chikki,dessert,dessert,1,40,high,sweet;high_sugar;nuts,nuts,190,5,22,10,2,1.5,16,5,180,30,1,0
+shankarpali,Shankarpali,snack,snack,1,50,high,fried;sweet,gluten,230,3,28,12,3,1,10,150,100,20,0.6,0
+ghevar,Ghevar,dessert,dessert,1,70,high,fried;sweet;high_sugar;ghee,dairy;gluten,280,3,38,14,6,0.5,22,20,80,40,0.4,0
+kuzhi_paniyaram,Kuzhi Paniyaram,snack,breakfast;snack,1,100,medium,fermented;steamed,,150,4,24,4,0.7,1,1,250,150,20,1,0
+double_ka_meetha,Double Ka Meetha,dessert,dessert,1,120,high,fried;sweet;high_sugar;dairy;ghee,gluten;dairy;nuts,320,5,40,16,7,1,25,150,180,100,0.8,0
+bhatura,Bhatura,staple,staple,1,90,high,fried;refined_carb,gluten,300,7,40,12,3,2,2,350,150,30,2,0
+litti_chokha,Litti Chokha,rice_dish,staple;curry,1,250,medium,whole_grain;fibre_rich,gluten,320,9,45,11,2,6,3,400,450,50,2.5,15
+daal_puri,Daal Puri,snack,snack;staple,1,80,high,fried;legume;refined_carb,gluten,260,7,32,11,2,3,2,300,250,30,1.8,0
+sutar_feni,Sutar Feni,dessert,dessert,1,40,high,fried;sweet;high_sugar;ghee,gluten,230,3,28,12,5,0.5,15,10,40,10,0.3,0
+ledikeni,Ledikeni,dessert,dessert,1,60,high,fried;sweet;high_sugar,dairy,220,4,32,9,5,0,24,30,90,80,0.2,0
+malapua,Malapua,dessert,dessert,1,60,high,fried;sweet;high_sugar;refined_carb,gluten;dairy,250,3,35,11,4,0.5,20,20,70,20,0.3,0
+basundi,Basundi,dessert,dessert,1,120,medium,dairy;sweet;high_sugar,dairy;nuts,210,6,24,10,6,0,20,70,180,150,0.2,0
+sandesh,Sandesh,dessert,dessert,1,50,medium,dairy;sweet;high_sugar,dairy,150,5,20,6,3.5,0,16,30,100,100,0.1,0
+dharwad_pedha,Dharwad Pedha,dessert,dessert,1,40,medium,dairy;sweet;high_sugar,dairy,170,3,22,8,5,0,18,30,90,90,0.1,0
+kofta,Kofta,curry,curry,1,200,low,fried;cream;high_fat,dairy,230,6,16,16,6,2,5,450,300,80,1,10
+paneer_butter_masala,Paneer Butter Masala,curry,curry,1,200,low,cream;butter;high_fat,dairy,230,10,9,17,8,1,5,480,280,220,1,8
+kalakand,Kalakand,dessert,dessert,1,50,medium,dairy;sweet;high_sugar,dairy,180,5,20,9,5,0,18,40,110,110,0.1,0
+sohan_papdi,Sohan Papdi,dessert,dessert,1,40,high,sweet;high_sugar;ghee,gluten;nuts,190,2,28,8,3,0.5,18,20,50,15,0.3,0
+qubani_ka_meetha,Qubani Ka Meetha,dessert,dessert,1,120,medium,sweet;high_sugar;fruit,nuts,180,2,35,4,1,3,28,10,250,20,1,5
+palak_paneer,Palak Paneer,curry,curry,1,200,low,cream;fibre_rich,dairy,220,11,10,15,7,3,3,400,350,220,2,20
+maach_jhol,Maach Jhol,curry,curry,0,200,low,fibre_rich;lean_protein,fish,180,20,6,8,1.5,1,2,400,350,40,1,10
+gavvalu,Gavvalu,snack,snack,1,50,high,fried;refined_carb,gluten,230,3,28,12,2,1,8,150,100,20,0.6,0
+adhirasam,Adhirasam,dessert,dessert,1,50,high,fried;sweet;high_sugar,,220,2,35,8,1.5,1,18,10,40,10,0.3,0
+lassi,Sweet Lassi,beverage,beverage,1,250,medium,dairy;sweet;high_sugar;probiotic,dairy,160,5,24,5,3,0,22,60,220,170,0.1,2
+gajar_ka_halwa,Gajar Ka Halwa,dessert,dessert,1,120,medium,sweet;high_sugar;dairy;ghee,dairy;nuts,230,4,28,12,6,2,20,50,250,110,0.6,3
+chicken_tikka,Chicken Tikka,curry,curry;snack,0,150,low,lean_protein;protein_rich,dairy,190,24,4,9,2,0.5,2,400,300,40,1.2,2
+cham_cham,Cham Cham,dessert,dessert,1,60,medium,dairy;sweet;high_sugar,dairy,190,5,26,7,4,0,22,30,90,90,0.1,0
+aloo_methi,Aloo Methi,curry,curry,1,150,medium,fibre_rich,,140,4,18,6,1,3,2,300,350,50,1.5,10
+chak_hao_kheer,Chak-Hao Kheer,dessert,dessert,1,150,medium,dairy;sweet;high_sugar;fibre_rich,dairy,210,5,36,5,3,2,18,50,150,100,1,0
+doodhpak,Doodhpak,dessert,dessert,1,150,medium,dairy;sweet;high_sugar,dairy;nuts,210,6,28,8,5,0.5,20,60,180,150,0.3,0
+rabri,Rabri,dessert,dessert,1,100,medium,dairy;sweet;high_sugar,dairy;nuts,220,6,20,13,8,0,18,60,180,160,0.2,0
+mysore_pak,Mysore Pak,dessert,dessert,1,50,high,fried;sweet;high_sugar;ghee,,250,3,28,15,7,1,18,20,60,15,0.4,0
