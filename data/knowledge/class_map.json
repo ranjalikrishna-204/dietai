@@ -1,4 +1,3 @@
-
 {
   "_note": "canonical class -> label aliases found in ANY source dataset (labels are lower-cased, spaces/hyphens -> underscores). Run `python ml/01_prepare_dataset.py --list-labels` to see what your sources contain, then extend the aliases.",
   "idli": [
@@ -331,5 +330,18 @@
   ],
   "mysore_pak": [
     "mysore_pak"
+  ],
+  "paneer_tikka": [
+    "paneer_tikka"
+  ],
+  "vada_pav": [
+    "vada_pav",
+    "vadapav"
+  ],
+  "dabeli": [
+    "dabeli"
+  ],
+  "dal": [
+    "dal"
   ]
 }

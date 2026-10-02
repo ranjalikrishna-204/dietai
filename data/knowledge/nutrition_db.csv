@@ -111,3 +111,7 @@ chak_hao_kheer,Chak-Hao Kheer,dessert,dessert,1,150,medium,dairy;sweet;high_suga
 doodhpak,Doodhpak,dessert,dessert,1,150,medium,dairy;sweet;high_sugar,dairy;nuts,210,6,28,8,5,0.5,20,60,180,150,0.3,0
 rabri,Rabri,dessert,dessert,1,100,medium,dairy;sweet;high_sugar,dairy;nuts,220,6,20,13,8,0,18,60,180,160,0.2,0
 mysore_pak,Mysore Pak,dessert,dessert,1,50,high,fried;sweet;high_sugar;ghee,,250,3,28,15,7,1,18,20,60,15,0.4,0
+paneer_tikka,Paneer Tikka,snack,snack;curry,1,150,low,lean_protein;protein_rich,dairy,220,14,8,15,7,1,3,400,200,300,1,8
+vada_pav,Vada Pav,street_food,snack;staple,1,150,high,fried;refined_carb;street_food,gluten,290,7,40,12,2,3,4,500,350,30,1.5,5
+dabeli,Dabeli,street_food,snack;staple,1,120,high,fried;refined_carb;street_food,gluten;nuts,250,5,36,10,2,3,8,450,300,25,1.2,5
+dal,Dal (mixed/unspecified),curry,curry;side,1,150,low,legume;protein_rich;fibre_rich,,100,6,14,2.5,0.5,3.5,1,300,300,25,1.8,0
