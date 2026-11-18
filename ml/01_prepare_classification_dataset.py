@@ -109,8 +109,11 @@ def main(list_labels: bool = False) -> None:
 
     rng = random.Random(SEED)
     kept_counts: dict[str, dict[str, int]] = {}
+    manifest: dict[str, list[str]] = {"train": [], "val": [], "test": []}
     for cls, paths in sorted(canonical_imgs.items()):
-        valid = [p for p in paths if is_valid_image(p)]
+        # sorted() makes the split independent of filesystem listing order, so the SAME split is
+        # produced in every Kaggle session / machine (needed for a fair multi-model comparison)
+        valid = sorted(p for p in paths if is_valid_image(p))
         rng.shuffle(valid)
         n = len(valid)
         if n < 10:
@@ -129,11 +132,16 @@ def main(list_labels: bool = False) -> None:
             for i, src in enumerate(files):
                 dest = dest_dir / f"{cls}_{i:05d}{src.suffix.lower()}"
                 shutil.copy2(src, dest)
+                manifest[split].append(str(src.relative_to(RAW_DIR)).replace("\\", "/"))
             kept_counts[cls][split] = len(files)
 
     classes = sorted(canonical_imgs.keys())
     (OUT_DIR / "classes.json").write_text(json.dumps(classes, indent=2))
     (OUT_DIR / "dataset_report.json").write_text(json.dumps(kept_counts, indent=2))
+    (OUT_DIR / "split_manifest.json").write_text(json.dumps(manifest, indent=1))
+    import hashlib
+    fp = hashlib.sha1("\n".join(f"{k}|{v}" for k in sorted(manifest) for v in sorted(manifest[k])).encode()).hexdigest()[:12]
+    print(f"Split fingerprint: {fp}   (must be identical in every session/model you compare)")
 
     total = sum(sum(v.values()) for v in kept_counts.values())
     print(f"\nDone. {len(classes)} classes, {total} images -> {OUT_DIR}")

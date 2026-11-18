@@ -1,0 +1,26 @@
+{
+  "classes": [
+    "biryani",
+    "butter_chicken",
+    "butter_naan",
+    "chapati",
+    "chole_bhature",
+    "dal_makhani",
+    "dal_tadka",
+    "gulab_jamun",
+    "jalebi",
+    "kadai_paneer",
+    "poha"
+  ],
+  "img_size": 224,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ]
+}

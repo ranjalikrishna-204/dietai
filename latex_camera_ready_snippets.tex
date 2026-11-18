@@ -1,0 +1,101 @@
+% =====================================================================================
+% Camera-ready snippets for paper 462.  Paste into your existing source.
+% Every  \todo{...}  is a number or sentence that must come from a REAL run -- search for
+% "todo" before submitting and make sure none are left.  Do not fill them with estimates.
+% Add to the preamble:   \usepackage{xcolor}  \usepackage{booktabs}
+% =====================================================================================
+\newcommand{\todo}[1]{{\color{red}\textbf{[#1]}}}
+
+% ---- 0. Fix the broken reference "Fig. ??" in Sec. VI-A --------------------------------
+% Put \label{fig:cm} INSIDE the confusion-matrix figure (after \caption) and write:
+%   "... a macro-averaged F1 of 0.6789 (Fig.~\ref{fig:cm})."
+
+% ---- 1. Sec. V-B  Dataset Preparation: add after the alias-mapping sentence ------------
+\textbf{Duplicate prevention.} Before the split, every image was fingerprinted twice: a SHA-256
+hash of the file bytes (exact duplicates) and a 64-bit difference hash with a Hamming-distance
+threshold of 4 (re-encoded, resized or lightly cropped copies). The audit was run (i) over the raw
+sources, to find images shared between the two datasets, and (ii) over the final train/validation/test
+folders, to confirm that no image appears in more than one split. It found \todo{N} exact and
+\todo{M} near-duplicate groups (\todo{P}\% of images), \todo{K} of which spanned both sources and
+\todo{L} of which carried conflicting class labels. All but one copy of each group was removed
+(\todo{R} images) before the stratified split, and the second audit reported \todo{0} cross-split
+duplicates. The final dataset therefore contains \todo{8,770 or the new count} images.
+% If the audit finds nothing, say so plainly: "The audit found no duplicate groups."
+
+% ---- 2. Sec. VI: new subsection "Comparison with Other Architectures" -------------------
+\subsection{Comparison with Other Architectures}
+To test whether EfficientNetV2-S is a sound choice, four ImageNet-pretrained CNNs were trained on the
+identical split with the identical recipe (\todo{30} epochs, batch size 32, AdamW with cosine
+annealing, Mixup, label smoothing, seed 42) and evaluated on the same held-out test set
+(Table~\ref{tab:model_comparison}). \todo{One or two sentences on what the table actually shows, e.g.
+which model is most accurate, and the accuracy/latency trade-off. Only claim EfficientNetV2-S is best
+if the numbers say so.}
+% Paste the generated table: models/reports/model_comparison_table.tex  (or  \input{...})
+
+% ---- 3. Sec. VI: new subsection "Portion-Size and Nutrient Estimation Error" -------------
+\subsection{Portion-Size and Nutrient Estimation Error}
+Nutrient values are looked up from a per-100\,g composition table rather than predicted, so two
+error sources remain: the portion weight and the table values. \textbf{Portion.} \todo{n} servings of
+\todo{f} dishes were weighed on a kitchen scale and photographed; the weight shown by the application
+differed from the measured weight by an MAE of \todo{x}\,g (RMSE \todo{y}\,g, MAPE \todo{z}\%, mean bias
+\todo{b}\,g). \textbf{Nutrients.} The stored per-100\,g values for \todo{F} foods were compared with
+\todo{IFCT 2017 / USDA FoodData Central}; the MAE was \todo{a}\,kcal (MAPE \todo{c}\%) for energy,
+\todo{..} for protein, \todo{..} for carbohydrate, \todo{..} for fat, \todo{..} for sugar and \todo{..}
+for sodium. \textbf{End to end.} Combining both, the calorie estimate of a meal deviated from the
+reference by \todo{MAE} kcal (\todo{MAPE}\%), of which \todo{table-only} kcal is attributable to the
+table and \todo{portion-only} kcal to the portion estimate (Table~\ref{tab:errors}).
+% Report n honestly; a small n is fine if you say it is small.
+
+% ---- 4. Sec. VI: new subsection "Expert Validation of the Rules" ---------------------------
+\subsection{Expert Validation of the Suitability Rules}
+The thresholds and the verdicts they produce were reviewed by \todo{name/role, e.g. a registered
+dietitian with N years of experience}. The reviewer checked every threshold (\todo{k} items) and gave an
+independent verdict (ok / caution / avoid) for \todo{116} foods under each of the six conditions,
+without seeing the system's verdict first; \todo{this blinding step only if it was really done}.
+Agreement with the system was \todo{X}\% overall (Cohen's $\kappa=$ \todo{k}), ranging from
+\todo{a}\% to \todo{b}\% across conditions, and \todo{Y}\% of the \todo{S} suggested substitutions were
+judged acceptable. The reviewer recommended changing \todo{list of threshold changes}, which were
+applied before the final results were generated. \todo{State the number of cases where the system said
+"ok" and the expert said "avoid" -- this is the clinically important disagreement.}
+
+% ---- 5. Replace the text under Fig. 4 (numbers recomputed after fixing a unit bug) --------
+% The nutrition table stores values per 100 g, but earlier code scaled them as if they were per
+% serving. With the fix, the worked example for Gulab Jamun (80 g, diabetes) is:
+%   256 kcal, 3.2 g protein, 40.0 g carbohydrate, 9.6 g fat, 48 mg sodium, 32.0 g sugar.
+% Verdict: avoid -- sugar 32 g vs 15 g limit, high glycaemic index, high-sugar food.
+% (Carbohydrate, 40 g, is now BELOW the 45 g limit, so it is no longer a reason.)
+% Alternatives are unchanged: Fresh Fruit Bowl, Plain Curd.  Re-capture the Fig. 4 screenshots from
+% the fixed app and update: "Meal totals 256 kcal | 3.2 g protein | 40.0 g carbs | 9.6 g fat | 48 mg sodium | 32.0 g sugar".
+% Also change "320 kcal" in the Fig. 4 caption/text to "256 kcal".
+
+% ---- 6. Sec. VII Limitations: replace the portion sentence --------------------------------
+% "Portion estimation uses the default serving unless a bounding box is available, so it does not
+%  adapt to the amount actually served; its measured error is reported in Sec. VI-?."
+
+% ---- 7. Sec. V-C: wording that matches the code ------------------------------------------
+% "During the first epoch only the classification head was trained ..." is accurate for the updated
+% training script (exact head parameters are selected). The earlier script also left EfficientNetV2's
+% squeeze-excitation layers trainable in that epoch, which is why the final numbers must come from a
+% run of the updated script.
+
+% ---- 8. Table for Sec. VI "Portion-Size and Nutrient Estimation Error" (label tab:errors) ---
+% Fill from models/reports/estimation_errors.json
+\begin{table}[htbp]
+\caption{Portion-size and nutrient-estimation error}
+\label{tab:errors}
+\centering\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Quantity} & \textbf{MAE} & \textbf{MAPE (\%)} \\
+\midrule
+Portion weight (g), $n=$ \todo{n} & \todo{x} & \todo{z} \\
+Energy per 100\,g (kcal), \todo{F} foods & \todo{a} & \todo{c} \\
+Protein per 100\,g (g) & \todo{..} & \todo{..} \\
+Carbohydrate per 100\,g (g) & \todo{..} & \todo{..} \\
+Fat per 100\,g (g) & \todo{..} & \todo{..} \\
+Sugar per 100\,g (g) & \todo{..} & \todo{..} \\
+Sodium per 100\,g (mg) & \todo{..} & \todo{..} \\
+Meal energy, end to end (kcal) & \todo{..} & \todo{..} \\
+\bottomrule
+\end{tabular}
+\end{table}

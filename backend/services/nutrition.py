@@ -1,4 +1,8 @@
-"""Loads data/knowledge/nutrition_db.csv and computes scaled nutrition for a given portion."""
+"""Loads data/knowledge/nutrition_db.csv and computes scaled nutrition for a given portion.
+
+UNITS: every nutrient column in nutrition_db.csv is expressed PER 100 g of food.
+`serving_g` is only the default portion used when no better estimate is available.
+"""
 from __future__ import annotations
 
 import functools
@@ -29,10 +33,9 @@ def get_food_row(food: str) -> dict:
 
 
 def scale_to_portion(food: str, portion_g: float) -> dict:
-    """Return per-portion nutrition values, linearly scaled from the reference serving size."""
+    """Return nutrition for `portion_g` grams (database values are per 100 g)."""
     row = get_food_row(food)
-    ref_g = row["serving_g"]
-    factor = portion_g / ref_g if ref_g else 1.0
+    factor = portion_g / 100.0
     scaled = {"food": food, "display_name": row["display_name"], "portion_g": round(portion_g, 1)}
     for col in ["kcal", "protein_g", "carb_g", "fat_g", "sat_fat_g", "fiber_g", "sugar_g",
                 "sodium_mg", "potassium_mg", "calcium_mg", "iron_mg", "vitamin_c_mg"]:
